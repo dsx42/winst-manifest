@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.10.24",
+  "_manifestVersion": "2026.10.25",
   "apps": [
     {
       "id": "winst",
@@ -1501,6 +1501,7 @@
         "versionKind": "semver"
       },
       "stripTopDir": true,
+      "keep": [ "data" ],
       "mainExe": "tinyMediaManager.exe",
       "shortcuts": { "desktop": true, "startMenu": true },
       "detect": {
