@@ -2005,6 +2005,32 @@
           }
         ]
       }
+    },
+    {
+      "id": "yt-dlp",
+      "name": "yt-dlp",
+      "description": "命令行界面的流行媒体下载工具",
+      "group": "下载",
+      "homepage": "https://github.com/yt-dlp/yt-dlp",
+      "type": "file",
+      "source": {
+        "kind": "github",
+        "repo": "yt-dlp/yt-dlp",
+        "versionRewrite": { "stripPrefix": "yt-dlp " },
+        "files": [
+          {
+            "url": "yt-dlp.exe",
+            "hashFile": "https://github.com/yt-dlp/yt-dlp/releases/download/{version}/SHA2-512SUMS",
+            "hashFrom": "sha512sums"
+          }
+        ]
+      },
+      "addToPath": [ true ],
+      "detect": {
+        "method": "cliVersion",
+        "versionArgs": "--version",
+        "versionKind": "semver"
+      }
     }
   ]
 }
