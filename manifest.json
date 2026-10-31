@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.10.30",
+  "_manifestVersion": "2026.10.31",
   "apps": [
     {
       "id": "winst",
@@ -678,14 +678,17 @@
       "installArgs": "--quiet",
       "uninstall": {
         "name": [
-          "Microsoft.WindowsAppRuntime*",
-          "MicrosoftCorporationII.WinAppRuntime*",
-          "Microsoft.WinAppRuntime.DDLM*"
+          "Microsoft.WindowsAppRuntime.{versionMajor}",
+          "MicrosoftCorporationII.WinAppRuntime.Main.{versionMajor}",
+          "MicrosoftCorporationII.WinAppRuntime.Singleton",
+          "Microsoft.WinAppRuntime.DDLM.{versionMajor}.*-x6",
+          "Microsoft.WinAppRuntime.DDLM.{versionMajor}.*-x8",
+          "Microsoft.WinAppRuntime.DDLM.{versionMajor}.*-a6"
         ]
       },
       "detect": {
         "method": "appx",
-        "name": "Microsoft.WindowsAppRuntime*"
+        "name": "Microsoft.WindowsAppRuntime.{versionMajor}"
       }
     },
     {
@@ -1272,7 +1275,7 @@
       "processes": ["Weixin.exe", "WeChat.exe"],
       "detect": {
         "method": "registry",
-        "name": "*微信*",
+        "name": "product:微信|WeChat|Weixin",
         "versionRewrite": { "from": "{a}.{b}.{c}.{d}", "to": "{a}.{b}.{c}" }
       }
     },
@@ -1926,6 +1929,81 @@
         "method": "cliVersion",
         "versionArgs": "--version",
         "versionKind": "semver"
+      }
+    },
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg",
+      "description": "音视频转换、录制与流处理工具",
+      "homepage": "https://github.com/GyanD/codexffmpeg/releases",
+      "type": "portable",
+      "source": {
+        "kind": "github",
+        "repo": "GyanD/codexffmpeg",
+        "files": [
+          {
+            "file": "ffmpeg-*-git-*-full_build.7z"
+          }
+        ]
+      },
+      "stripTopDir": true,
+      "mainExe": "bin\\ffmpeg.exe",
+      "addToPath": [
+        "{installDir}\\bin"
+      ],
+      "detect": {
+        "method": "cliVersion",
+        "versionArgs": "-version",
+        "versionBetween": [
+          "ffmpeg version ",
+          "-full_build"
+        ]
+      },
+      "group": "运行环境"
+    },
+    {
+      "id": "NVIDIA-App",
+      "name": "NVIDIA App",
+      "description": "NVIDIA 显卡驱动管理与游戏优化工具",
+      "group": "系统工具",
+      "homepage": "https://www.nvidia.cn/software/nvidia-app/",
+      "type": "installer",
+      "source": {
+        "kind": "page",
+        "pageUrl": "https://www.nvidia.cn/software/nvidia-app/",
+        "link": {
+          "href": "https://cn.download.nvidia.com/nvapp/client/*/NVIDIA_app_v*.exe"
+        },
+        "files": [
+          {
+            "file": "NVIDIA_app_v*.exe"
+          }
+        ],
+        "versionFrom": "url",
+        "versionKind": "semver"
+      },
+      "detect": {
+        "method": "registry",
+        "name": "product:NVIDIA App"
+      }
+    },
+    {
+      "id": "HotPE",
+      "name": "HotPE",
+      "description": "Windows PE 系统镜像",
+      "group": "系统镜像",
+      "homepage": "https://github.com/VirtualHotBar/HotPEToolBox/releases",
+      "type": "download",
+      "source": {
+        "kind": "github",
+        "repo": "VirtualHotBar/HotPEToolBox",
+        "versionFrom": "file",
+        "versionKind": "semver",
+        "files": [
+          {
+            "file": "HotPE-V*.iso"
+          }
+        ]
       }
     }
   ]
