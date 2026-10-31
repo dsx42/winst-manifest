@@ -1340,7 +1340,7 @@
         "kind": "github",
         "repo": "qwerttvv/Player",
         "versionFrom": "file",
-        "versionBetween": [ "MpcVideoRenderer-", "_git" ],
+        "versionBetween": [ "MpcVideoRenderer-", ".zip" ],
         "files": [
           { "file": "MpcVideoRenderer-*.zip" }
         ]
