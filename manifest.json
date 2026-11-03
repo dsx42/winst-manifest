@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.1",
+  "_manifestVersion": "2026.11.3",
   "apps": [
     {
       "id": "winst",
@@ -454,11 +454,13 @@
           },
           {
             "url": "https://raw.githubusercontent.com/tonsky/intellij-alabaster/master/Alabaster.icls",
-            "dest": "colors\\Alabaster.icls"
+            "dest": "colors\\Alabaster.icls",
+            "compare": "etag,size"
           },
           {
             "url": "https://raw.githubusercontent.com/tonsky/intellij-alabaster/master/Alabaster%20Dark.icls",
-            "dest": "colors\\Alabaster Dark.icls"
+            "dest": "colors\\Alabaster Dark.icls",
+            "compare": "etag,size"
           }
         ]
       },
