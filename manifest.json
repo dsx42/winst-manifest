@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.3",
+  "_manifestVersion": "2026.11.4",
   "apps": [
     {
       "id": "winst",
@@ -1361,7 +1361,7 @@
         "kind": "github",
         "repo": "qwerttvv/Player",
         "versionFrom": "file",
-        "versionBetween": [ "MpcVideoRenderer-", ".zip" ],
+        "versionKind": "semver",
         "files": [
           { "file": "MpcVideoRenderer-*.zip" }
         ]
@@ -1570,6 +1570,9 @@
           { "text": "飞牛 fnOS" },
           { "text": "X86" },
           { "text": "直接下载" }
+        ],
+        "hashClick": [
+          { "text": "MD5" }
         ],
         "versionKind": "semver",
         "files": [
@@ -1976,7 +1979,7 @@
         "repo": "GyanD/codexffmpeg",
         "files": [
           {
-            "file": "ffmpeg-*-git-*-full_build.7z"
+            "file": "ffmpeg-*-full_build.7z"
           }
         ]
       },
