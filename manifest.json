@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.4",
+  "_manifestVersion": "2026.11.5",
   "apps": [
     {
       "id": "winst",
@@ -858,7 +858,8 @@
       "shortcuts": { "desktop": true, "startMenu": true },
       "detect": {
         "method": "fileVersion",
-        "pathGlob": "{installDir}\\DBX.exe"
+        "pathGlob": "{installDir}\\DBX.exe",
+        "versionKind": "semver"
       }
     },
     {
