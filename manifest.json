@@ -1188,7 +1188,12 @@
       "source": {
         "kind": "page",
         "pageUrl": "https://www.google.com/intl/zh-CN/chrome/?standalone=1",
-        "versionFrom": "json",
+        "versionFrom": "package",
+        "packageVersion": {
+          "inner": "updater.7z",
+          "path": "*_chrome_installer.exe",
+          "versionKind": "semver"
+        },
         "fetchWith": "browser",
         "click": [
           {
@@ -1200,11 +1205,10 @@
         ],
         "files": [
           {
-            "file": "*.exe"
+            "file": "*.exe",
+            "compare": "size"
           }
-        ],
-        "versionUrl": "https://chromiumdash.appspot.com/fetch_releases?channel=Stable&platform=Windows&num=1",
-        "versionKey": "0.version"
+        ]
       },
       "installArgs": "/silent /install",
       "uninstallArgs": "/quiet /norestart",
