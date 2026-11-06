@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.5",
+  "_manifestVersion": "2026.11.6",
   "apps": [
     {
       "id": "winst",
@@ -1341,7 +1341,7 @@
         "kind": "github",
         "repo": "qwerttvv/Player",
         "versionFrom": "file",
-        "versionBetween": [ "MPC-BE.", "_git" ],
+        "versionKind": "semver",
         "files": [
           { "file": "MPC-BE.*.x64.7z" }
         ]
