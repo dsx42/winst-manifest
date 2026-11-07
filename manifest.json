@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.6",
+  "_manifestVersion": "2026.11.8",
   "apps": [
     {
       "id": "winst",
@@ -1109,14 +1109,15 @@
       "homepage": "https://pixpin.cn/download/",
       "type": "portable",
       "source": {
-        "kind": "page",
-        "pageUrl": "https://pixpin.cn/download/",
-        "link": { "href": "https://*.pixpin.cn/PixPin_win_*.zip" },
+        "kind": "json",
+        "apiUrl": "https://upgrade.pixpin.cn/api/check/0/1.0.0.0/windows/x64/cn/zh-cn/.zip",
+        "versionKey": "version",
         "files": [
-          { "file": "PixPin_win_*.zip" }
-        ],
-        "versionFrom": "url",
-        "versionKind": "semver"
+          { 
+            "urlKey": "direct_url.1",
+            "hashKey": "direct_md5"
+          }
+        ]
       },
       "stripTopDir": true,
       "mainExe": "PixPin.exe",
