@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.8",
+  "_manifestVersion": "2026.11.9",
   "apps": [
     {
       "id": "winst",
@@ -350,20 +350,20 @@
       }
     },
     {
-      "id": "node24",
-      "name": "Node.js 24",
+      "id": "node26",
+      "name": "Node.js 26",
       "description": "Node.js 运行时（含 npm）",
       "homepage": "https://nodejs.org/",
       "type": "portable",
       "source": {
         "kind": "listing",
-        "indexUrl": "https://nodejs.org/dist/latest-v24.x/",
+        "indexUrl": "https://nodejs.org/dist/latest-v26.x/",
         "versionKind": "semver",
-        "versionFilter": "24.*",
+        "versionFilter": "26.*",
         "files": [
           {
-            "url": "https://nodejs.org/dist/latest-v24.x/node-v{version}-win-x64.zip",
-            "hashFile": "https://nodejs.org/dist/latest-v24.x/SHASUMS256.txt",
+            "url": "https://nodejs.org/dist/latest-v26.x/node-v{version}-win-x64.7zip",
+            "hashFile": "https://nodejs.org/dist/latest-v26.x/SHASUMS256.txt",
             "hashFrom": "sha256sums"
           }
         ]
