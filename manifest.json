@@ -362,7 +362,7 @@
         "versionFilter": "26.*",
         "files": [
           {
-            "url": "https://nodejs.org/dist/latest-v26.x/node-v{version}-win-x64.7zip",
+            "url": "https://nodejs.org/dist/latest-v26.x/node-v{version}-win-x64.7z",
             "hashFile": "https://nodejs.org/dist/latest-v26.x/SHASUMS256.txt",
             "hashFrom": "sha256sums"
           }
