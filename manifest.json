@@ -638,16 +638,28 @@
       "homepage": "https://dotnet.microsoft.com/zh-cn/download/dotnet",
       "type": "installer",
       "source": {
-        "kind": "direct",
-        "pageUrl": "https://dotnet.microsoft.com/zh-cn/download/dotnet",
-        "versionFrom": "page",
-        "versionBetween": [ "在活动支持期间" ],
-        "versionKind": "semver",
+        "kind": "json",
+        "apiUrl": "https://builds.dotnet.microsoft.com/dotnet/release-metadata/releases-index.json",
+        "follow": {
+          "itemsKey": "releases-index",
+          "versionKey": "latest-release",
+          "versionFilter": "preset:stable",
+          "sort": "semver",
+          "apiUrl": "https://builds.dotnet.microsoft.com/dotnet/release-metadata/{versionMajor}.0/releases.json"
+        },
+        "itemsKey": "releases",
+        "versionKey": "windowsdesktop.version",
+        "versionFilter": "preset:stable",
+        "sort": "semver",
         "files": [
           {
-            "url": "https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/{version}/windowsdesktop-runtime-{version}-win-x64.exe",
-            "hashFile": "https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-{version}-windows-x64-installer",
-            "hashFrom": "sha512"
+            "itemsKey": "windowsdesktop.files",
+            "match": {
+              "rid": "win-x64"
+            },
+            "file": "windowsdesktop-runtime-*-win-x64.exe",
+            "urlKey": "url",
+            "hashKey": "hash"
           }
         ]
       },
