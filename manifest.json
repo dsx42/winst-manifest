@@ -1832,18 +1832,35 @@
       "homepage": "https://developer.android.com/tools/releases/platform-tools",
       "type": "portable",
       "source": {
-        "kind": "direct",
-        "versionFrom": "page",
-        "pageUrl": "https://developer.android.com/tools/releases/platform-tools?hl=zh-cn",
-        "versionBetween": [ ">修订版本</h2>", "（" ],
-        "versionKind": "semver",
+        "kind": "xml",
+        "apiUrl": "https://dl.google.com/android/repository/repository2-1.xml",
+        "itemsKey": "remotePackage",
+        "match": {
+          "@path": "platform-tools",
+          "channelRef.@ref": "channel-0"
+        },
+        "versionKey": [
+          "revision.major",
+          "revision.minor",
+          "revision.micro"
+        ],
+        "baseUrl": "https://dl.google.com/android/repository/",
         "files": [
-          { "url": "https://dl.google.com/android/repository/platform-tools-latest-windows.zip?hl=zh-cn" }
+          {
+            "itemsKey": "archives.archive",
+            "match": {
+              "host-os": "windows"
+            },
+            "urlKey": "complete.url",
+            "hashKey": "complete.checksum"
+          }
         ]
       },
       "stripTopDir": true,
       "mainExe": "adb.exe",
-      "processes": [ "adb.exe" ],
+      "processes": [
+        "adb.exe"
+      ],
       "addToPath": true,
       "shortcuts": {
         "desktop": false,
@@ -1852,7 +1869,10 @@
       "detect": {
         "method": "markerFile",
         "pathGlob": "{installDir}\\source.properties",
-        "versionBetween": [ "Pkg.Revision=", "\n" ],
+        "versionBetween": [
+          "Pkg.Revision=",
+          "\n"
+        ],
         "versionKind": "semver"
       }
     },
