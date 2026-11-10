@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.9",
+  "_manifestVersion": "2026.11.10",
   "apps": [
     {
       "id": "winst",
@@ -385,20 +385,17 @@
       "homepage": "https://graphviz.org/",
       "type": "portable",
       "source": {
-        "kind": "page",
-        "pageUrl": "https://www.graphviz.org/download/",
-        "link": {
-          "text": "(64-bit) ZIP archive",
-          "href": "https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/*"
-        },
+        "kind": "json",
+        "apiUrl": "https://gitlab.com/api/v4/projects/graphviz%2Fgraphviz/releases/permalink/latest",
+        "versionKey": "tag_name",
         "files": [
           {
-            "file": "*-win64.zip",
-            "hashFile": "https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/{version}/windows_10_cmake_Release_Graphviz-{version}-win64.zip.sha256",
-            "hashFrom": "sha256sums"
+            "itemsKey": "assets.links",
+            "file": "windows_*_cmake_Release_Graphviz-*-win64.zip",
+            "urlKey": "url",
+            "hashFileMatch": "windows_*_cmake_Release_Graphviz-*-win64.zip.sha256"
           }
-        ],
-        "versionKind": "semver"
+        ]
       },
       "stripTopDir": true,
       "mainExe": "bin\\dot.exe",
