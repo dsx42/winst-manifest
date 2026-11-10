@@ -995,11 +995,13 @@
       "homepage": "https://geekuninstaller.com/download",
       "type": "portable",
       "source": {
-        "kind": "page",
-        "pageUrl": "https://geekuninstaller.com/download",
-        "link": { "href": "*/geek.zip" },
+        "kind": "direct",
         "versionFrom": "page",
-        "versionBetween": [ "<b>", "</b>" ]
+        "pageUrl": "https://geekuninstaller.com/update.txt",
+        "versionBetween": [ "|", "|" ],
+        "files": [
+          { "url": "https://geekuninstaller.com/geek.zip" }
+        ]
       },
       "stripTopDir": false,
       "mainExe": "geek.exe",
