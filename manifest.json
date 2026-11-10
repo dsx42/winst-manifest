@@ -1199,33 +1199,21 @@
       "source": {
         "kind": "page",
         "pageUrl": "https://www.google.com/intl/zh-CN/chrome/?standalone=1",
-        "versionFrom": "package",
-        "packageVersion": {
-          "inner": "updater.7z",
-          "path": "*_chrome_installer.exe",
-          "versionKind": "semver"
-        },
+        "versionFrom": "json",
+        "versionUrl": "https://chromiumdash.appspot.com/fetch_releases?channel=Stable&platform=Windows&num=1",
+        "versionKey": "0.version",
         "fetchWith": "browser",
         "click": [
-          {
-            "id": "js-download-now"
-          },
-          {
-            "text": "接受并安装"
-          }
+          { "id": "js-download-now" },
+          { "text": "接受并安装" }
         ],
         "files": [
-          {
-            "file": "*.exe",
-            "compare": "size"
-          }
+          { "file": "*.exe" }
         ]
       },
       "installArgs": "/silent /install",
       "uninstallArgs": "/quiet /norestart",
-      "processes": [
-        "chrome.exe"
-      ],
+      "processes": [ "chrome.exe" ],
       "detect": {
         "method": "registry",
         "name": "*Google Chrome*"
