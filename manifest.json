@@ -1799,18 +1799,19 @@
       "homepage": "https://www.workbuddy.cn/",
       "type": "portable",
       "source": {
-        "kind": "page",
-        "pageUrl": "https://www.workbuddy.cn/",
-        "fetchWith": "browser",
-        "click": [
-          { "class": "btn-download" },
-          { "class": "wb2-dl-menu__item", "text": "Windows x64" }
+        "kind": "json",
+        "apiUrl": "https://www.workbuddy.cn/v2/update?platform=workbuddy-win32-x64-user",
+        "versionKey": "version",
+        "files": [
+          {
+            "urlKey": "url",
+            "file": "*.exe"
+          }
         ],
-        "files": [ { "file": "*.exe" } ],
-        "versionFrom": "url",
-        "versionBetween": [ "-user-", "-" ],
-        "versionKind": "semver",
-        "versionRewrite": { "from": "{major}.{minor}.{patch}.{build}", "to": "{major}.{minor}.{patch}" }
+        "versionRewrite": {
+          "from": "{major}.{minor}.{patch}.{build}",
+          "to": "{major}.{minor}.{patch}"
+        }
       },
       "stripTopDir": "$PLUGINSDIR\\app-64.7z",
       "mainExe": "WorkBuddy.exe",
