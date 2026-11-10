@@ -677,14 +677,15 @@
       "homepage": "https://learn.microsoft.com/zh-cn/windows/apps/windows-app-sdk/downloads",
       "type": "installer",
       "source": {
-        "kind": "page",
-        "pageUrl": "https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/downloads",
-        "link": { "href": "https://aka.ms/windowsappsdk/*/windowsappruntimeinstall-x64.exe" },
+        "kind": "direct",
+        "versionFrom": "json",
+        "versionUrl": "https://nuget.azure.cn/v3-flatcontainer/microsoft.windowsappsdk/index.json",
+        "versionKey": "versions",
+        "versionFilter": "preset:stable",
+        "sort": "semver",
         "files": [
-          { "file": "windowsappruntimeinstall-x64.exe" }
-        ],
-        "versionFrom": "page",
-        "versionBetween": [ "<td><strong>", "</strong>" ]
+          { "url": "https://aka.ms/windowsappsdk/{versionMajor}.{versionMinor}/{version}/windowsappruntimeinstall-x64.exe" }
+        ]
       },
       "installArgs": "--quiet",
       "uninstall": {
