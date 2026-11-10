@@ -825,15 +825,13 @@
       "type": "portable",
       "source": {
         "kind": "listing",
-        "indexUrl": [
-          "https://dlcdn.apache.org/maven/maven-3/",
-          "https://dlcdn.apache.org/maven/maven-4/"
-        ],
+        "indexUrl": "https://dlcdn.apache.org/maven/maven-*",
         "versionKind": "semver",
+        "versionFilter": "preset:stable",
         "files": [
           {
-            "url": "https://dlcdn.apache.org/maven/maven-3/{version}/binaries/apache-maven-{version}-bin.zip",
-            "hashFile": "https://dlcdn.apache.org/maven/maven-3/{version}/binaries/apache-maven-{version}-bin.zip.sha512",
+            "url": "https://dlcdn.apache.org/maven/maven-{versionMajor}/{version}/binaries/apache-maven-{version}-bin.zip",
+            "hashFile": "https://dlcdn.apache.org/maven/maven-{versionMajor}/{version}/binaries/apache-maven-{version}-bin.zip.sha512",
             "hashFrom": "sha512"
           }
         ]
