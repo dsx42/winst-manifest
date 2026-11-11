@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.10",
+  "_manifestVersion": "2026.11.11",
   "apps": [
     {
       "id": "winst",
@@ -1223,7 +1223,7 @@
     {
       "id": "Firefox",
       "name": "Mozilla Firefox",
-      "description": "网页浏览器）",
+      "description": "网页浏览器",
       "group": "浏览器",
       "homepage": "https://ftp.mozilla.org/pub/firefox/releases/",
       "type": "installer",
@@ -1231,6 +1231,7 @@
         "kind": "listing",
         "indexUrl": "https://ftp.mozilla.org/pub/firefox/releases/",
         "versionKind": "semver",
+        "versionFilter": "preset:stable",
         "files": [
           "https://ftp.mozilla.org/pub/firefox/releases/{version}/win64/zh-CN/Firefox%20Setup%20{version}.exe"
         ]
