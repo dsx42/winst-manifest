@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.12",
+  "_manifestVersion": "2026.11.13",
   "apps": [
     {
       "id": "winst",
@@ -2466,21 +2466,18 @@
         },
         "files": [
           {
-            "file": "codex-x86_64-pc-windows-msvc.exe.zip"
+            "file": "codex-package-x86_64-pc-windows-msvc.tar.gz",
+            "checksum": {
+              "file": "https://github.com/openai/codex/releases/download/{version}/codex-package_SHA256SUMS",
+              "format": "sha256sums"
+            }
           }
         ]
       },
-      "stripTopDir": false,
-      "postInstallCopy": [
-        {
-          "from": "codex-x86_64-pc-windows-msvc.exe",
-          "to": "codex.exe",
-          "move": true
-        }
-      ],
-      "mainExe": "codex.exe",
+      "stripTopDir": "codex-package-x86_64-pc-windows-msvc.tar",
+      "mainExe": "bin\\codex.exe",
       "addToPath": [
-        "{installDir}"
+        "{installDir}\\bin"
       ],
       "detect": {
         "method": "cliVersion",
