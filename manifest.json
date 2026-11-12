@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.11",
+  "_manifestVersion": "2026.11.12",
   "apps": [
     {
       "id": "winst",
@@ -1709,7 +1709,8 @@
         "repo": "qwerttvv/Player",
         "version": {
           "from": "file",
-          "kind": "semver"
+          "kind": "semver",
+          "between": ["MPC-BE.", ".x64.7z"]
         },
         "files": [
           {
