@@ -2421,7 +2421,7 @@
       "id": "ChatGPT",
       "description": "OpenAI 桌面客户端",
       "group": "AI Agent",
-      "type": "portable",
+      "type": "installer",
       "source": {
         "kind": "direct",
         "version": {
@@ -2435,19 +2435,9 @@
           }
         ]
       },
-      "mainExe": "app\\ChatGPT.exe",
-      "shortcuts": {
-        "desktop": true,
-        "startMenu": true
-      },
-      "stripTopDir": false,
       "detect": {
-        "method": "markerFile",
-        "pathGlob": "{installDir}\\AppxManifest.xml",
-        "versionBetween": [
-          " Version=\"",
-          "\""
-        ]
+        "method": "appx",
+        "name": "OpenAI.Codex"
       }
     },
     {
