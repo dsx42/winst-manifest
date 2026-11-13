@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.13",
+  "_manifestVersion": "2026.11.14",
   "apps": [
     {
       "id": "winst",
@@ -1534,13 +1534,17 @@
           }
         ],
         "version": {
-          "from": "json",
-          "url": "https://chromiumdash.appspot.com/fetch_releases?channel=Stable&platform=Windows&num=1",
-          "key": "0.version"
+          "from": "package",
+          "package": {
+            "inner": "updater.7z",
+            "path": "*_chrome_installer.exe",
+            "versionKind": "semver"
+          }
         },
         "files": [
           {
-            "file": "*.exe"
+            "file": "*.exe",
+            "compare": "size"
           }
         ]
       },
