@@ -17,7 +17,7 @@
           {
             "url": "winst.zip",
             "checksum": {
-              "file": "https://github.com/dsx42/winst/releases/download/v{version}/winst.zip.sha512",
+              "file": "winst.zip.sha512",
               "format": "sha512sums"
             }
           }
@@ -78,7 +78,7 @@
           {
             "url": "FluxDown-CLI-{version}-windows-x64.zip",
             "checksum": {
-              "file": "https://github.com/zerx-lab/FluxDown/releases/download/v{version}/SHA256SUMS.txt",
+              "file": "SHA256SUMS.txt",
               "format": "sha256sums"
             }
           }
@@ -132,7 +132,7 @@
           {
             "url": "FluxDown-{version}-windows-x64-portable.zip",
             "checksum": {
-              "file": "https://github.com/zerx-lab/FluxDown/releases/download/v{version}/SHA256SUMS.txt",
+              "file": "SHA256SUMS.txt",
               "format": "sha256sums"
             }
           }
@@ -219,7 +219,7 @@
           {
             "url": "ventoy-{version}-windows.zip",
             "checksum": {
-              "file": "https://github.com/ventoy/Ventoy/releases/download/v{version}/sha256.txt",
+              "file": "sha256.txt",
               "format": "sha256sums"
             }
           }
@@ -473,7 +473,7 @@
           {
             "url": "https://nodejs.org/dist/latest-v26.x/node-v{version}-win-x64.7z",
             "checksum": {
-              "file": "https://nodejs.org/dist/latest-v26.x/SHASUMS256.txt",
+              "file": "SHASUMS256.txt",
               "format": "sha256sums"
             }
           }
@@ -1071,7 +1071,7 @@
           {
             "url": "https://dlcdn.apache.org/maven/maven-{versionMajor}/{version}/binaries/apache-maven-{version}-bin.zip",
             "checksum": {
-              "file": "https://dlcdn.apache.org/maven/maven-{versionMajor}/{version}/binaries/apache-maven-{version}-bin.zip.sha512",
+              "file": "apache-maven-{version}-bin.zip.sha512",
               "format": "sha512"
             }
           }
@@ -1181,7 +1181,7 @@
           {
             "url": "FlClash-{version}-windows-amd64.zip",
             "checksum": {
-              "file": "https://github.com/chen08209/FlClash/releases/download/v{version}/SHA256SUMS",
+              "file": "SHA256SUMS",
               "format": "sha256sums"
             }
           }
@@ -1921,7 +1921,7 @@
           {
             "url": "FlClash-{version}-android-arm64-v8a.apk",
             "checksum": {
-              "file": "https://github.com/chen08209/FlClash/releases/download/v{version}/SHA256SUMS",
+              "file": "SHA256SUMS",
               "format": "sha256sums"
             }
           }
@@ -1946,7 +1946,7 @@
           {
             "file": "tinyMediaManager-*-windows-amd64.zip",
             "checksum": {
-              "file": "https://release.tinymediamanager.org/v{versionMajor}/dist/tinyMediaManager-{version}-windows-amd64.zip.sha256",
+              "file": "tinyMediaManager-{version}-windows-amd64.zip.sha256",
               "format": "sha256"
             }
           }
@@ -1994,7 +1994,7 @@
           {
             "file": "debian-testing-amd64-DVD-1.iso",
             "checksum": {
-              "file": "https://cdimage.debian.org/cdimage/weekly-builds/amd64/iso-dvd/SHA512SUMS",
+              "file": "SHA512SUMS",
               "format": "sha512sums"
             }
           }
@@ -2146,7 +2146,7 @@
           {
             "url": "PowerShell-{version}-win-x64.zip",
             "checksum": {
-              "file": "https://github.com/PowerShell/PowerShell/releases/download/v{version}/hashes.sha256",
+              "file": "hashes.sha256",
               "format": "sha256sums"
             }
           }
@@ -2207,7 +2207,7 @@
           {
             "url": "KmsTool_v{version}.zip",
             "checksum": {
-              "file": "https://github.com/dsx42/KmsTool/releases/download/v{version}/KmsTool_v{version}.sha256",
+              "file": "KmsTool_v{version}.sha256",
               "format": "sha256sums"
             }
           }
@@ -2236,7 +2236,7 @@
           {
             "url": "UnattendTool_v{version}.zip",
             "checksum": {
-              "file": "https://github.com/dsx42/UnattendTool/releases/download/v{version}/UnattendTool_v{version}.sha256",
+              "file": "UnattendTool_v{version}.sha256",
               "format": "sha256sums"
             }
           }
@@ -2458,7 +2458,7 @@
           {
             "file": "codex-package-x86_64-pc-windows-msvc.tar.gz",
             "checksum": {
-              "file": "https://github.com/openai/codex/releases/download/{version}/codex-package_SHA256SUMS",
+              "file": "codex-package_SHA256SUMS",
               "format": "sha256sums"
             }
           }
@@ -2492,7 +2492,7 @@
           {
             "url": "https://acc-1258344699.cos.accelerate.myqcloud.com/@tencent-ai/codebuddy-code/releases/download/{version}/codebuddy-code_Windows_x86_64.zip",
             "checksum": {
-              "file": "https://acc-1258344699.cos.accelerate.myqcloud.com/@tencent-ai/codebuddy-code/releases/download/{version}/checksums.txt",
+              "file": "checksums.txt",
               "format": "sha256sums"
             }
           }
@@ -2603,7 +2603,7 @@
           {
             "url": "yt-dlp.exe",
             "checksum": {
-              "file": "https://github.com/yt-dlp/yt-dlp/releases/download/{version}/SHA2-512SUMS",
+              "file": "SHA2-512SUMS",
               "format": "sha512sums"
             }
           }
