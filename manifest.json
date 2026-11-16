@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.14",
+  "_manifestVersion": "2026.11.16",
   "apps": [
     {
       "id": "winst",
@@ -1333,19 +1333,14 @@
       "homepage": "https://github.com/builtbybel/FluentCleaner",
       "type": "portable",
       "source": {
-        "kind": "github",
-        "repo": "builtbybel/FluentCleaner",
+        "kind": "json",
+        "apiUrl": "https://raw.githubusercontent.com/builtbybel/FluentCleaner/main/docs/versions.json",
         "version": {
-          "from": "releaseBody",
-          "kind": "semver",
-          "between": [
-            ".NET Framework 4.8",
-            "Download"
-          ]
+          "key": "classic.version"
         },
         "files": [
           {
-            "url": "FluentCleaner-Classic-net48.zip"
+            "urlKey": "classic.downloadUrl"
           }
         ]
       },
