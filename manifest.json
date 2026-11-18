@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.16",
+  "_manifestVersion": "2026.11.19",
   "apps": [
     {
       "id": "winst",
@@ -2012,7 +2012,8 @@
         "pageUrl": "https://fnnas.com/download",
         "click": [
           {
-            "text": "飞牛 fnOS"
+            "text": "飞牛 fnOS",
+            "class": "DesktopButton_animatedIconTrigger"
           },
           {
             "text": "X86"
@@ -2051,7 +2052,8 @@
         "pageUrl": "https://fnnas.com/download",
         "click": [
           {
-            "text": "飞牛 App"
+            "text": "飞牛 App",
+            "class": "DesktopButton_animatedIconTrigger"
           },
           {
             "text": "Android"
@@ -2079,7 +2081,8 @@
         "pageUrl": "https://fnnas.com/download",
         "click": [
           {
-            "text": "飞牛 TV"
+            "text": "飞牛 TV",
+            "class": "DesktopButton_animatedIconTrigger"
           },
           {
             "text": "Android TV"
@@ -2107,7 +2110,8 @@
         "pageUrl": "https://fnnas.com/download",
         "click": [
           {
-            "text": "飞牛同步"
+            "text": "飞牛同步",
+            "class": "DesktopButton_animatedIconTrigger"
           },
           {
             "text": "Windows"
