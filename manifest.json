@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.19",
+  "_manifestVersion": "2026.11.20",
   "apps": [
     {
       "id": "winst",
@@ -24,10 +24,6 @@
         ]
       },
       "mainExe": "winst.cmd",
-      "keep": [
-        "lists/",
-        "*.list"
-      ],
       "shortcuts": {
         "desktop": true,
         "startMenu": true
