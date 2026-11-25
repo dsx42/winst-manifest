@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.20",
+  "_manifestVersion": "2026.11.25",
   "apps": [
     {
       "id": "winst",
@@ -2009,7 +2009,7 @@
         "click": [
           {
             "text": "飞牛 fnOS",
-            "class": "DesktopButton_animatedIconTrigger"
+            "class": "animatedIconTrigger"
           },
           {
             "text": "X86"
@@ -2049,7 +2049,7 @@
         "click": [
           {
             "text": "飞牛 App",
-            "class": "DesktopButton_animatedIconTrigger"
+            "class": "animatedIconTrigger"
           },
           {
             "text": "Android"
@@ -2078,7 +2078,7 @@
         "click": [
           {
             "text": "飞牛 TV",
-            "class": "DesktopButton_animatedIconTrigger"
+            "class": "animatedIconTrigger"
           },
           {
             "text": "Android TV"
@@ -2107,7 +2107,7 @@
         "click": [
           {
             "text": "飞牛同步",
-            "class": "DesktopButton_animatedIconTrigger"
+            "class": "animatedIconTrigger"
           },
           {
             "text": "Windows"
