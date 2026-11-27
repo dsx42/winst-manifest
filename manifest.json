@@ -1,5 +1,5 @@
 {
-  "_manifestVersion": "2026.11.25",
+  "_manifestVersion": "2026.11.28",
   "apps": [
     {
       "id": "winst",
@@ -2616,6 +2616,42 @@
         "versionArgs": "--version",
         "versionKind": "semver"
       }
+    },
+    {
+      "id": "Antigravity-App",
+      "name": "Antigravity App",
+      "type": "portable",
+      "group": "AI Agent",
+      "source": {
+        "kind": "yaml",
+        "apiUrl": "https://antigravity-hub-auto-updater-974169037036.us-central1.run.app/manifest/latest-x64-win.yml",
+        "version": {"key": "version"},
+        "files": [{
+          "itemsKey": "files",
+          "file": "Antigravity-x64.exe",
+          "urlKey": "url",
+          "checksum": {"key": "sha512", "encoding": "base64"}
+        }]
+      },
+      "stripTopDir": "$PLUGINSDIR/app-64.7z",
+      "mainExe": "Antigravity.exe",
+      "detect": {"method": "fileVersion"},
+      "shortcuts": {"startMenu": true, "desktop": true}
+    },
+    {
+      "id": "Antigravity-CLI",
+      "name": "Antigravity CLI",
+      "type": "file",
+      "group": "AI Agent",
+      "source": {
+        "kind": "json",
+        "apiUrl": "https://antigravity-cli-auto-updater-974169037036.us-central1.run.app/manifests/windows_amd64.json",
+        "version": {"key": "version"},
+        "files": [{"urlKey": "url", "checksum": {"key": "sha512"}}]
+      },
+      "postInstallCopy": [{"from": "cli_windows_x64.exe", "to": "agy.exe", "move": true}],
+      "detect": {"method": "cliVersion", "versionArgs": "--version"},
+      "addToPath": true
     }
   ]
 }
